@@ -1,0 +1,22 @@
+<div class="todoapp">
+    <header>
+        <h1>ToDo's</h1>
+    <mat-form-field  appearance="fill">
+            <input type="text"  matInput id="neuesToDo" placeholder="Neues ToDo erstellen" autofocus (keydown)="addToDo($event)" />
+    </mat-form-field>
+    </header>
+
+    <div class="todos">
+        <div *ngFor="let todo of todos" id="todolist"><br>
+            <div id="todo-Item">
+                <label>{{todo.title}}</label>
+                <input id="{{todo.uuid}}" type="checkbox"  value="" (click)="updateToDo($event)"  [checked]="todo.finish" />
+            </div>
+        </div>
+    </div>
+    <div>
+        <span id="anzahl"></span>
+        <button mat-button id="aufraeumen" (click)="deleteAll()">Lösche erledigte</button>
+    </div>
+    <div class="bottom"></div>
+</div>

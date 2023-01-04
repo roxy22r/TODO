@@ -1,0 +1,48 @@
+.todoapp{
+    text-align: center;
+    display: flexbox;
+    justify-content: center;
+    margin: 200px 0 auto auto;
+    color: black;
+}
+
+
+.todos{
+    text-align: center;
+    display: flexbox;
+    justify-content: center;
+    margin: 0  auto;
+    color: black;
+}
+#todolist{
+    text-align: center;
+    display: flexbox;
+    justify-content: center;
+    margin: 0  auto;
+    color: black;
+}
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled){
+    width: 40em;
+   
+}
+
+#todo-Item{
+    display: grid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    height: 2em;
+    grid-template-columns: auto 15% auto auto 8.5em ;
+  
+}
+
+
+#todo-Item label{
+    text-align: left;
+    grid-column-start: 2;
+    grid-column-end: 3 ;
+}
+#todo-Item input{
+    grid-column-start: 4;
+    grid-column-end: 5 ;
+}
